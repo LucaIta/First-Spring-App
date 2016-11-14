@@ -1,0 +1,16 @@
+package com.luv2code.springdemo;
+
+public class TrackCoach implements Coach {
+
+	@Override
+	public String GetDailyWorkout() {
+		return "Run an hard 5k";
+	}
+
+	@Override
+	public String GetDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
