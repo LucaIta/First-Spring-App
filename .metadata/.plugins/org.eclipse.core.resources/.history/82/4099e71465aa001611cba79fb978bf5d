@@ -1,0 +1,25 @@
+package com.luv2code.springdemo;
+
+public class CricketCoach implements Coach {
+	
+	private FortuneService fortuneService;
+	
+	public CricketCoach() {
+		System.out.println("CricketCoach: Inside no-arg constructor");
+	}
+	
+	private void setFortuneService(FortuneService fortuneService) {
+		this.fortuneService = fortuneService; 
+	}
+
+	@Override
+	public String GetDailyWorkout() {
+		return "Practice fast bowling for 15 minutes";
+	}
+
+	@Override
+	public String GetDailyFortune() {
+		return fortuneService.getFortune();
+	}
+
+}

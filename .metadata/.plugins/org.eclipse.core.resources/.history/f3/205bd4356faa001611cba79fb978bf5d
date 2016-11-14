@@ -1,0 +1,24 @@
+package com.luv2code.springdemo;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class SetterDemoApp {
+
+	public static void main(String[] args) {
+
+		// load the conf file
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		
+		// retrieve the bean
+		CricketCoach theCoach = context.getBean("myCricketCoach", CricketCoach.class);
+		
+		// call methods
+		System.out.println(theCoach.GetDailyWorkout());
+		System.out.println(theCoach.GetDailyFortune());
+
+		// close context
+		context.close();
+		
+	}
+
+}
