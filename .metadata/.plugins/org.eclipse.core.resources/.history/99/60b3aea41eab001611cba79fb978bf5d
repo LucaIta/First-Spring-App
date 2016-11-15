@@ -1,0 +1,15 @@
+package com.luv2code.springdemo;
+
+import java.util.ArrayList;
+
+public class HappyFortuneService implements FortuneService {
+	
+	ArrayList fortuneServiceArray = new ArrayList();
+	fortuneServiceArray = ["Today is your lucky day!","Today is not your lucky day!","Today will be avarage for you!"];
+
+	@Override
+	public String getFortune() {
+		return "Today is your lucky day!";
+	}
+
+}

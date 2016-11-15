@@ -23,12 +23,12 @@
     <bean id="myCoach"
     	class="com.luv2code.springdemo.TrackCoach ">
     	<!-- Set Up the constructor injection -->
-    	<constructor-arg ref="myFortune" />
+    	<constructor-arg ref="randomFortune" />
     </bean> <!--  this is my bean, I will refer to the ID to retrieve the bean, the class field specify the class which it will implement -->
     
     <bean id="myCricketCoach"
     	class="com.luv2code.springdemo.CricketCoach">
-    	<property name="fortuneService" ref="randomFortune"/>
+    	<property name="fortuneService" ref="myFortune"/>
     	<property name ="emailAddress" value="${foo.email}"/>
     	<property name="team" value="${foo.team}"/>
     </bean>
