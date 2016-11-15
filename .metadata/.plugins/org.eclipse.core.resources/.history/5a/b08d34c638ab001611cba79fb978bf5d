@@ -27,9 +27,7 @@ public class TrackCoach implements Coach {
 		System.out.println("Inside my doMyStartupStuff method");
 	}
 	
-	// cleanUp Code
-	public void doMyCleanupStuff() {
-		System.out.println("Inside my doMyCleanupStuff method");
-	}
 	
+	// cleanUp Code
+
 }
